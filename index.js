@@ -20,7 +20,7 @@ app.use(async ctx => {
   ctx.body = 'hello xiuxiu'
   console.log(ctx.body);
   ctx.set({ 'Access-Control-Allow-Origin': "*" })
-  if (ctx.originalUrl === '/user/login') {
+  if (ctx.originalUrl === '/api/user/login') {
     ctx.body = {
       status: 'success',
       code: 200,
